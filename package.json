@@ -1,6 +1,7 @@
 {
+  "name": "spreading-the-jam-stack",
+  "version": "0.0.1",
   "private": true,
-  "version": "1.0.0",
   "description": "Deck created with mdx-deck",
   "scripts": {
     "start": "mdx-deck deck.mdx",
@@ -9,11 +10,10 @@
     "image": "mdx-deck screenshot deck.mdx",
     "help": "mdx-deck"
   },
-  "keywords": [],
-  "author": "Brent Jackson",
-  "license": "MIT",
   "devDependencies": {
     "mdx-deck": "^1.6.7"
   },
-  "name": "spreading-the-jam-stack"
+  "keywords": [],
+  "author": "Scott Spence",
+  "license": "MIT"
 }

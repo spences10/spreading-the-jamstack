@@ -3,10 +3,20 @@ import theme from 'mdx-deck/themes'
 export default {
   ...theme,
 
-  // Customize your presentation theme here.
-  //
-  // Read the docs for more info:
-  // https://github.com/jxnblk/mdx-deck/blob/master/docs/theming.md
-  // https://github.com/jxnblk/mdx-deck/blob/master/docs/themes.md
-
+  // fonts
+  monospace: '"Dank Mono", monospace',
+  font: 'Old Standard TT',
+  h1: {
+    fontFamily: 'Nunito',
+    fontWeight: 600
+  },
+  // custom colors
+  colors: {
+    text: '#34434b',
+    background: '#fafafa',
+    link: '#fof'
+  },
+  img: {
+    maxHEight: '100%'
+  }
 }

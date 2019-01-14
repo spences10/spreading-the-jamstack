@@ -5,9 +5,9 @@ export default {
 
   // fonts
   monospace: '"Dank Mono", monospace',
-  font: 'Old Standard TT',
+  font: 'Martel Sans',
   h1: {
-    fontFamily: 'Nunito',
+    fontFamily: 'Arvo',
     fontWeight: 600
   },
   // custom colors

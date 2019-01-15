@@ -14,9 +14,9 @@ export default {
   colors: {
     text: '#34434b',
     background: '#fafafa',
-    link: '#fof'
+    link: '#f0f'
   },
   img: {
-    maxHEight: '100%'
+    maxHeight: '100%'
   }
 }

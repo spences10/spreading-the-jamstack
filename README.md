@@ -2,6 +2,14 @@
 
 This was generated with [mdx-deck][]'s `npm init deck` command.
 
+## Presenter mode
+
+Windows Alt+p
+
+## Overview mode
+
+Windows Alt+o
+
 ## Development
 
 To run the presentation deck in development mode:

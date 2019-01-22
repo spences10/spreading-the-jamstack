@@ -107,6 +107,76 @@ export default Split
 
 ---
 
+What is static?
+
+### Definition
+
+Static (loaded term), static means the architecture not the result,
+static means capable of being served directly from a CDN
+
+---
+
+Static means no work to be done at request time.
+
+---
+
+Much smaller attack surface to secure and protect
+
+---
+
+export default Split
+
+## _Dynamic_
+
+<Appear>
+
+```notes
+- CDN
+- AWS load balancer
+- Web server for server things
+- database things
+```
+
+<div>Browser 👀</div>
+<div>⬇</div>
+<div>CDN 🌐</div>
+
+<div>⬇</div>
+<div>Load balancer ⚖</div>
+
+<div>⬇</div>
+<div>Web server </div>
+
+<div>⬇</div>
+<div>Database server</div>
+
+<div>⬇</div>
+<div>Browser 👀</div>
+
+</Appear>
+
+---
+
+export default Split
+
+## _JAMstack_
+
+<Appear>
+
+```notes
+- CDN
+```
+
+<div>Browser 👀</div>
+<div>⬇</div>
+<div>CDN 🌐</div>
+<div>⬇</div>
+<div>Browser 👀</div>
+
+</Appear>
+
+---
+
 <img
   height="800px"
   src={require('file-loader!./images/jam-logo.jpg')}
@@ -135,66 +205,3 @@ http://www.404pagefound.com/
 ## Meetup!
 
 https://www.meetup.com/JAMstack-London
-
----
-
-What is static?
-
-### Definition
-
-Static (loaded term), static means the architecture not the result,
-static means capable of being served directly from a CDN
-
----
-
-Static means no work to be done at request time.
-
----
-
-Much smaller attack surface to secure and protect
-
----
-
-export default Split
-
-## Dynamic Web App Setup
-
-<Appear>
-
-<div>Browser 👀</div>
-<div>⬇</div>
-<div>CDN 🌐</div>
-<div>⬇</div>
-<div>Load balancer ⚖</div>
-<div>⬇</div>
-<div>Web server </div>
-<div>⬇</div>
-<div>Database server</div>
-<div>⬇</div>
-<div>Web server</div>
-<div>⬇</div>
-<div>Load balancer</div>
-<div>⬇</div>
-<div>CDN 🌐</div>
-<div>⬇</div>
-<div>Browser 👀</div>
-
-</Appear>
-
----
-
-export default Split
-
-## JAMstack Setup
-
-<Appear>
-
-<div>Browser 👀</div>
-<div>⬇</div>
-<div>CDN 🌐</div>
-<div>⬇</div>
-<div>Browser 👀</div>
-
-</Appear>
-
----

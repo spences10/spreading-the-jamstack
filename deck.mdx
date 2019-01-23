@@ -3,6 +3,8 @@ export { default as theme } from './src/index'
 import { Head, Appear } from 'mdx-deck'
 import { Split } from 'mdx-deck/layouts'
 
+import { LayoutNoFooter, Layout, BGImage } from './src/index'
+
 <Head>
   <title>JAMStack ❤</title>
   <link
@@ -14,6 +16,8 @@ import { Split } from 'mdx-deck/layouts'
     rel="shortcut icon"
   />
 </Head>
+
+export default Layout
 
 # Spreading the JAMstack
 
@@ -41,6 +45,8 @@ and a better developer experience.
 
 ---
 
+export default Layout
+
 ## JavaScript
 
 <small>
@@ -55,6 +61,8 @@ JavaScript.
 
 ---
 
+export default Layout
+
 ## APIs
 
 <small>
@@ -68,6 +76,8 @@ These can be custom-built or leverage third-party services.
 
 ---
 
+export default Layout
+
 ## Markup
 
 <small>
@@ -78,6 +88,8 @@ site generator for content sites, or a build tool for web apps.
 </small>
 
 ---
+
+export default Layout
 
 ## Also known as Static Sites
 
@@ -95,17 +107,20 @@ export default Split
 
 ---
 
-<img
-  height="500px"
-  src={require('file-loader!./images/90s-site.gif')}
-/>
+export default LayoutNoFooter
+
+<BGImage src={require('file-loader!./images/90s-site.gif')} />
 
 ---
+
+export default Layout
 
 - It's not the experience
 - It's the architecture
 
 ---
+
+export default Layout
 
 What is static?
 
@@ -116,9 +131,13 @@ static means capable of being served directly from a CDN
 
 ---
 
+export default Layout
+
 Static means no work to be done at request time.
 
 ---
+
+export default Layout
 
 Much smaller attack surface to secure and protect
 
@@ -145,10 +164,10 @@ export default Split
 <div>Load balancer ⚖</div>
 
 <div>⬇</div>
-<div>Web server </div>
+<div>Web server 🤹‍♀️</div>
 
 <div>⬇</div>
-<div>Database server</div>
+<div>Database server ‍🤹‍♀️</div>
 
 <div>⬇</div>
 <div>Browser 👀</div>
@@ -177,12 +196,13 @@ export default Split
 
 ---
 
-<img
-  height="800px"
-  src={require('file-loader!./images/jam-logo.jpg')}
-/>
+export default LayoutNoFooter
+
+<BGImage src={require('file-loader!./images/jam-logo.jpg')} />
 
 ---
+
+export default Layout
 
 # SSGs (Static Site Generators)
 
@@ -195,6 +215,8 @@ export default Split
 ### Next.js
 
 ---
+
+export default Layout
 
 # Resources
 

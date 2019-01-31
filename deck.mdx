@@ -1,7 +1,9 @@
-import { Head, Appear } from 'mdx-deck'
-import { Split, FullScreenCode } from 'mdx-deck/layouts'
+export { default as theme } from './src/index'
 
-export { default as theme } from './src/theme'
+import { Head, Appear } from 'mdx-deck'
+import { Split } from 'mdx-deck/layouts'
+
+import { LayoutNoFooter, Layout, BGImage } from './src/index'
 
 <Head>
   <title>JAMStack ❤</title>
@@ -14,6 +16,8 @@ export { default as theme } from './src/theme'
     rel="shortcut icon"
   />
 </Head>
+
+export default Layout
 
 # Spreading the JAMstack
 
@@ -41,43 +45,49 @@ and a better developer experience.
 
 ---
 
+export default Split
+
 ## JavaScript
 
-<small>
+<img src={require('file-loader!./images/javascript-logo.svg')} />
 
+```notes
 Any dynamic programming during the request/response cycle is handled
 by JavaScript, running entirely on the client (the browser).
-
 This could be any frontend framework, library, or even vanilla
 JavaScript.
-
-</small>
+```
 
 ---
+
+export default Split
 
 ## APIs
 
-<small>
+<img src={require('file-loader!./images/database-schema.svg')} />
 
+```notes
 All server-side processes or database actions are abstracted into
 reusable APIs, accessed over HTTPS with JavaScript.
-
 These can be custom-built or leverage third-party services.
-
-</small>
+```
 
 ---
+
+export default Split
 
 ## Markup
 
-<small>
+<img src={require('file-loader!./images/css-html.svg')} />
 
+```notes
 Templated markup should be prebuilt at deploy time, usually using a
 site generator for content sites, or a build tool for web apps.
-
-</small>
+```
 
 ---
+
+export default Layout
 
 ## Also known as Static Sites
 
@@ -95,24 +105,102 @@ export default Split
 
 ---
 
-<img
-  height="500px"
-  src={require('file-loader!./images/90s-site.gif')}
-/>
+export default LayoutNoFooter
+
+<BGImage src={require('file-loader!./images/90s-site.gif')} />
 
 ---
+
+export default Layout
 
 - It's not the experience
 - It's the architecture
 
 ---
 
-<img
-  height="800px"
-  src={require('file-loader!./images/jam-logo.jpg')}
-/>
+export default Layout
+
+What is static?
+
+### Definition
+
+Static (loaded term), static means the architecture not the result,
+static means capable of being served directly from a CDN
 
 ---
+
+export default Layout
+
+Static means no work to be done at request time.
+
+---
+
+export default Layout
+
+Much smaller attack surface to secure and protect
+
+---
+
+export default Split
+
+## _Dynamic_
+
+<Appear>
+
+```notes
+- CDN
+- AWS load balancer
+- Web server for server things
+- database things
+```
+
+<div>Browser 👀</div>
+<div>⬇</div>
+<div>CDN 🌐</div>
+
+<div>⬇</div>
+<div>Load balancer ⚖</div>
+
+<div>⬇</div>
+<div>Web server 🤹‍♀️</div>
+
+<div>⬇</div>
+<div>Database server ‍🤹‍♀️</div>
+
+<div>⬇</div>
+<div>Browser 👀</div>
+
+</Appear>
+
+---
+
+export default Split
+
+## _JAMstack_
+
+<Appear>
+
+```notes
+- CDN
+```
+
+<div>Browser 👀</div>
+<div>⬇</div>
+<div>CDN 🌐</div>
+<div>⬇</div>
+<div>Browser 👀</div>
+
+</Appear>
+
+---
+
+export default LayoutNoFooter
+
+<BGImage src={require('file-loader!./images/jam-logo.jpg')} />
+
+---
+
+export default Layout
 
 # SSGs (Static Site Generators)
 
@@ -126,6 +214,8 @@ export default Split
 
 ---
 
+export default Layout
+
 # Resources
 
 https://www.staticgen.com/
@@ -135,66 +225,3 @@ http://www.404pagefound.com/
 ## Meetup!
 
 https://www.meetup.com/JAMstack-London
-
----
-
-What is static?
-
-### Definition
-
-Static (loaded term), static means the architecture not the result,
-static means capable of being served directly from a CDN
-
----
-
-Static means no work to be done at request time.
-
----
-
-Much smaller attack surface to secure and protect
-
----
-
-export default Split
-
-## Dynamic Web App Setup
-
-<Appear>
-
-<div>Browser 👀</div>
-<div>⬇</div>
-<div>CDN 🌐</div>
-<div>⬇</div>
-<div>Load balancer ⚖</div>
-<div>⬇</div>
-<div>Web server </div>
-<div>⬇</div>
-<div>Database server</div>
-<div>⬇</div>
-<div>Web server</div>
-<div>⬇</div>
-<div>Load balancer</div>
-<div>⬇</div>
-<div>CDN 🌐</div>
-<div>⬇</div>
-<div>Browser 👀</div>
-
-</Appear>
-
----
-
-export default Split
-
-## JAMstack Setup
-
-<Appear>
-
-<div>Browser 👀</div>
-<div>⬇</div>
-<div>CDN 🌐</div>
-<div>⬇</div>
-<div>Browser 👀</div>
-
-</Appear>
-
----

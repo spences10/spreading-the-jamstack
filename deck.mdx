@@ -29,7 +29,10 @@ export default Layout
 
 ---
 
-<img src={require('file-loader!./images/karmaLogo.png')} />
+<img
+  src={require('file-loader!./images/karmaLogo.png')}
+  alt="karmarama logo"
+/>
 
 ---
 
@@ -69,7 +72,10 @@ export default Split
 
 ## JavaScript
 
-<img src={require('file-loader!./images/javascript-logo.svg')} />
+<img
+  src={require('file-loader!./images/javascript-logo.svg')}
+  alt="JavaScript logo"
+/>
 
 ```notes
 Any dynamic programming during the request/response cycle is handled
@@ -84,7 +90,10 @@ export default Split
 
 ## APIs
 
-<img src={require('file-loader!./images/database-schema.svg')} />
+<img
+  src={require('file-loader!./images/database-schema.svg')}
+  alt="database schema"
+/>
 
 ```notes
 All server-side processes or database actions are abstracted into
@@ -98,7 +107,10 @@ export default Split
 
 ## Markup
 
-<img src={require('file-loader!./images/css-html.svg')} />
+<img
+  src={require('file-loader!./images/css-html.svg')}
+  alt="html and css logos"
+/>
 
 ```notes
 Templated markup should be prebuilt at deploy time, usually using a
@@ -127,13 +139,19 @@ export default Split
 
 export default LayoutNoFooter
 
-<BGImage src={require('file-loader!./images/90s-site.gif')} />
+<BGImage
+  src={require('file-loader!./images/90s-site.gif')}
+  alt="90s site gif"
+/>
 
 ---
 
 export default LayoutNoFooter
 
-<BGImage src={require('file-loader!./images/capt90s.gif')} />
+<BGImage
+  src={require('file-loader!./images/capt90s.gif')}
+  alt="capt. marvel 90s site gif"
+/>
 
 ---
 
@@ -167,7 +185,10 @@ export default Layout
 
 export default LayoutNoFooter
 
-<BGImage src={require('file-loader!./images/ytho.jpg')} />
+<BGImage
+  src={require('file-loader!./images/ytho.jpg')}
+  alt="y tho meme"
+/>
 
 ---
 
@@ -188,6 +209,7 @@ export default Layout
 <img
   height="200px"
   src={require('file-loader!./images/google-logo.svg')}
+  alt="google logo"
 />
 
 ## Since 2010
@@ -311,12 +333,6 @@ export default Split
 
 ---
 
-export default LayoutNoFooter
-
-<BGImage src={require('file-loader!./images/jam-logo.jpg')} />
-
----
-
 export default Layout
 
 # SSGs (Static Site Generators)
@@ -328,6 +344,64 @@ export default Layout
 ### React Static
 
 ### Next.js
+
+```notes
+Static site generators aren't new
+April 2013 for Jekyll
+```
+
+---
+
+export default LayoutNoFooter
+
+<BGImage
+  src={require('file-loader!./images/jam-logo.jpg')}
+  alt="gatsby JAMstack logo"
+/>
+
+```notes
+Gatsby is more of a PWA generator
+```
+
+---
+
+# JAMstack sites
+
+<h2>
+  <a
+    href="https://www.smashingmagazine.com/"
+    target="_blank"
+    rel="noopener">
+    smashingmagazine.com/
+  </a>
+</h2>
+
+<h2>
+  <a href="https://www.jfkt4.nyc/" target="_blank" rel="noopener">
+    jfkt4.nyc/
+  </a>
+</h2>
+
+<h2>
+  <a href="https://reactjs.org/" target="_blank" rel="noopener">
+    reactjs.org/
+  </a>
+</h2>
+
+<h2>
+  <a
+    href="https://store.gatsbyjs.org/"
+    target="_blank"
+    rel="noopener">
+    store.gatsbyjs.org/
+  </a>
+</h2>
+
+<h2>
+  <a href="https://nozzle.io/" target="_blank" rel="noopener">
+    nozzle.io/
+  </a>
+</h2>
 
 ---
 
@@ -357,4 +431,7 @@ export default Layout
 
 export default LayoutNoFooter
 
-<BGImage src={require('file-loader!./images/t.hanks.gif')} />
+<BGImage
+  src={require('file-loader!./images/t.hanks.gif')}
+  alt="tom hanks waiving"
+/>

@@ -26,8 +26,15 @@ const Layout = ({ children }) => (
   <Fragment>
     <Wrapper>{children}</Wrapper>
     <Footer>
-      <span>Spreading The JAMstack</span>
-      <span>@ScottDevTweets</span>
+      <span>Spreading the JAMstack</span>
+      <span>
+        <a
+          href="https://twitter.com/ScottDevTweets"
+          target="_blank"
+          rel="noopener">
+          @ScottDevTweets
+        </a>
+      </span>
     </Footer>
   </Fragment>
 )

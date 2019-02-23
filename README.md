@@ -8,6 +8,8 @@ This was generated with [mdx-deck][]'s `npm init deck` command.
 
 Windows Alt+p
 
+Add `/?mode=presenter#0` to the URL you're using!
+
 ## Overview mode
 
 Windows Alt+o

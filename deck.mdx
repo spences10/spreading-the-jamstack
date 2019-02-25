@@ -3,7 +3,12 @@ export { default as theme } from './src/index'
 import { Head, Appear } from 'mdx-deck'
 import { Split } from 'mdx-deck/layouts'
 
-import { LayoutNoFooter, Layout, BGImage } from './src/index'
+import {
+  LayoutNoFooter,
+  Layout,
+  BGImage,
+  GoodThings
+} from './src/index'
 
 <Head>
   <title>JAMstack ❤</title>
@@ -33,6 +38,10 @@ export default Layout
   src={require('file-loader!./images/karmaLogo.png')}
   alt="karmarama logo"
 />
+
+---
+
+export default GoodThings
 
 ---
 
@@ -335,7 +344,7 @@ export default Split
 
 export default Layout
 
-# Static Site Generators (SSGs) 
+# Static Site Generators (SSGs)
 
 ## JavaScript
 
@@ -382,7 +391,6 @@ export default Split
   - download bootstrap version
   - load it to Netlify
   - Mind blown
-
 
 ---
 

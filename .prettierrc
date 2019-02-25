@@ -19,7 +19,13 @@
     {
       "files": "*.js",
       "options": {
-        "parser": "babylon"
+        "parser": "babel"
+      }
+    },
+    {
+      "files": "*.mdx",
+      "options": {
+        "parser": "mdx"
       }
     },
     {

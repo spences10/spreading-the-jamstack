@@ -1,4 +1,4 @@
-import BGImage from './bg-image'
+import BGImage from './BgImage'
 import FullScreenImage from './FullScreenImage'
 import Layout from './layout'
 import LayoutNoFooter from './LayoutNoFooter'

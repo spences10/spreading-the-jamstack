@@ -3,7 +3,7 @@ export { default as theme } from './src/index'
 import { Head, Appear } from 'mdx-deck'
 import { Split } from 'mdx-deck/layouts'
 
-import { LayoutNoFooter, Layout, BGImage } from './src/index'
+import { FullScreenImage, LayoutNoFooter, Layout, BGImage } from './src/index'
 
 <Head>
   <title>JAMstack ❤</title>
@@ -25,9 +25,13 @@ export default Layout
 
 ---
 
+export default LayoutNoFooter
+
 # Scott Spence
 
 ---
+
+export default LayoutNoFooter
 
 <img
   src={require('file-loader!./images/karmaLogo.png')}
@@ -36,9 +40,13 @@ export default Layout
 
 ---
 
+export default LayoutNoFooter
+
 # Warning!
 
 ---
+
+export default LayoutNoFooter
 
 # Excessive use
 
@@ -58,7 +66,7 @@ export default Split
 
 ```notes
 The JAMstack is not about specific technologies.
-It’s a new way of building websites and apps that
+It's a new way of building websites and apps that
 
 delivers better performance,
 higher security,
@@ -137,7 +145,7 @@ export default Split
 
 ---
 
-export default LayoutNoFooter
+export default FullScreenImage
 
 <BGImage
   src={require('file-loader!./images/90s-site.gif')}
@@ -146,7 +154,7 @@ export default LayoutNoFooter
 
 ---
 
-export default LayoutNoFooter
+export default FullScreenImage
 
 <BGImage
   src={require('file-loader!./images/capt90s.gif')}
@@ -183,7 +191,7 @@ export default Layout
 
 ---
 
-export default LayoutNoFooter
+export default FullScreenImage
 
 <BGImage
   src={require('file-loader!./images/ytho.jpg')}
@@ -335,7 +343,7 @@ export default Split
 
 export default Layout
 
-# SSGs (Static Site Generators)
+# Static Site Generators (SSGs)
 
 ## JavaScript
 
@@ -352,7 +360,7 @@ April 2013 for Jekyll
 
 ---
 
-export default LayoutNoFooter
+export default FullScreenImage
 
 <BGImage
   src={require('file-loader!./images/jam-logo.jpg')}
@@ -364,6 +372,30 @@ Gatsby is more of a PWA generator
 ```
 
 ---
+
+export default Split
+
+# Detail the workflow
+
+### Netlify with a pre built template
+
+### Netlify with Gatsby
+
+### Netlify with this presentation
+
+---
+
+export default LayoutNoFooter
+
+- Netlify with a pre built template
+  - search HTML5 template, pick http://www.initializr.com/
+  - download bootstrap version
+  - load it to Netlify
+  - Mind blown
+
+---
+
+export default LayoutNoFooter
 
 # JAMstack sites
 
@@ -405,6 +437,8 @@ Gatsby is more of a PWA generator
 
 ---
 
+export default LayoutNoFooter
+
 # Slides
 
 ## [ss10.me/jam-talk](https://ss10.me/jam-talk)
@@ -429,7 +463,7 @@ export default Layout
 
 ---
 
-export default LayoutNoFooter
+export default FullScreenImage
 
 <BGImage
   src={require('file-loader!./images/t.hanks.gif')}

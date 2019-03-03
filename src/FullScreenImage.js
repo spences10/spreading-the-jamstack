@@ -11,6 +11,8 @@ const Wrapper = styled.main`
   position: relative;
 `
 
-const LayoutNoFooter = ({ children }) => <Wrapper>{children}</Wrapper>
+const FullScreenImage = ({ children }) => (
+  <Wrapper>{children}</Wrapper>
+)
 
-export default LayoutNoFooter
+export default FullScreenImage

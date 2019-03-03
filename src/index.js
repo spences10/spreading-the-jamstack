@@ -1,7 +1,8 @@
+import BGImage from './BgImage'
+import FullScreenImage from './FullScreenImage'
+import Layout from './Layout'
+import LayoutNoFooter from './LayoutNoFooter'
 import Theme from './theme'
-import BGImage from './bg-image'
-import Layout from './layout'
-import LayoutNoFooter from './layout-no-footer'
 
-export { BGImage, Layout, LayoutNoFooter }
+export { BGImage, Layout, LayoutNoFooter, FullScreenImage }
 export default Theme

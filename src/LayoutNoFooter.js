@@ -1,8 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
-import FullScreenImage from './FullScreenImage'
 
-const Wrapper = styled(FullScreenImage)`
+// why can't I use styled(OtherComponent) here?
+const Wrapper = styled.main`
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
   border: solid 0.75rem #1b2341;
 `
 

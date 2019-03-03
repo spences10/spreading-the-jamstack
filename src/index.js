@@ -1,6 +1,6 @@
 import BGImage from './BgImage'
 import FullScreenImage from './FullScreenImage'
-import Layout from './layout'
+import Layout from './Layout'
 import LayoutNoFooter from './LayoutNoFooter'
 import Theme from './theme'
 

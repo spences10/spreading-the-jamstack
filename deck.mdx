@@ -3,7 +3,7 @@ export { default as theme } from './src/index'
 import { Head, Appear } from 'mdx-deck'
 import { Split } from 'mdx-deck/layouts'
 
-import { LayoutNoFooter, Layout, BGImage } from './src/index'
+import { FullScreenImage, LayoutNoFooter, Layout, BGImage } from './src/index'
 
 <Head>
   <title>JAMstack ❤</title>
@@ -145,7 +145,7 @@ export default Split
 
 ---
 
-export default LayoutNoFooter
+export default FullScreenImage
 
 <BGImage
   src={require('file-loader!./images/90s-site.gif')}
@@ -154,7 +154,7 @@ export default LayoutNoFooter
 
 ---
 
-export default LayoutNoFooter
+export default FullScreenImage
 
 <BGImage
   src={require('file-loader!./images/capt90s.gif')}
@@ -191,7 +191,7 @@ export default Layout
 
 ---
 
-export default LayoutNoFooter
+export default FullScreenImage
 
 <BGImage
   src={require('file-loader!./images/ytho.jpg')}
@@ -360,7 +360,7 @@ April 2013 for Jekyll
 
 ---
 
-export default LayoutNoFooter
+export default FullScreenImage
 
 <BGImage
   src={require('file-loader!./images/jam-logo.jpg')}
@@ -463,7 +463,7 @@ export default Layout
 
 ---
 
-export default LayoutNoFooter
+export default FullScreenImage
 
 <BGImage
   src={require('file-loader!./images/t.hanks.gif')}

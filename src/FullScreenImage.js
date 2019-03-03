@@ -9,9 +9,10 @@ const Wrapper = styled.main`
   flex-direction: row;
   justify-content: center;
   position: relative;
-  border: solid 0.75rem #1b2341;
 `
 
-const LayoutNoFooter = ({ children }) => <Wrapper>{children}</Wrapper>
+const FullScreenImage = ({ children }) => (
+  <Wrapper>{children}</Wrapper>
+)
 
-export default LayoutNoFooter
+export default FullScreenImage

@@ -1,6 +1,6 @@
 {
   "name": "spreading-the-jam-stack",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "private": true,
   "description": "Deck created with mdx-deck",
   "scripts": {
@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "file-loader": "3.0.1",
-    "mdx-deck": "1.10.0",
+    "mdx-deck": "1.10.2",
     "prettier": "1.16.4",
     "pretty-quick": "1.10.0"
   },

@@ -22,7 +22,7 @@ const Footer = styled.footer`
   justify-content: space-between;
 `
 
-const Layout = ({ children }) => (
+export const Layout = ({ children }) => (
   <Fragment>
     <Wrapper>{children}</Wrapper>
     <Footer>
@@ -38,5 +38,3 @@ const Layout = ({ children }) => (
     </Footer>
   </Fragment>
 )
-
-export default Layout

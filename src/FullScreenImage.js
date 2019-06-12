@@ -11,8 +11,6 @@ const Wrapper = styled.main`
   position: relative;
 `
 
-const FullScreenImage = ({ children }) => (
+export const FullScreenImage = ({ children }) => (
   <Wrapper>{children}</Wrapper>
 )
-
-export default FullScreenImage

@@ -29,10 +29,10 @@ const Layout = ({ children }) => (
       <span>Spreading the JAMstack</span>
       <span>
         <a
-          href="https://twitter.com/ScottDevTweets"
+          href="https://twitter.com/spences10"
           target="_blank"
           rel="noopener">
-          @ScottDevTweets
+          @spences10
         </a>
       </span>
     </Footer>

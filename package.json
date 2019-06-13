@@ -17,8 +17,12 @@
     }
   },
   "devDependencies": {
+<<<<<<< HEAD
     "file-loader": "3.0.1",
     "husky": "^2.4.1",
+=======
+    "file-loader": "4.0.0",
+>>>>>>> 680cc05556053fecacb5d917e4ecc6ebd6e7b469
     "mdx-deck": "1.10.2",
     "prettier": "1.18.2",
     "pretty-quick": "1.11.0"

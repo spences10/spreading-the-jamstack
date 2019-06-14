@@ -22,21 +22,19 @@ const Footer = styled.footer`
   justify-content: space-between;
 `
 
-const Layout = ({ children }) => (
+export const Layout = ({ children }) => (
   <Fragment>
     <Wrapper>{children}</Wrapper>
     <Footer>
       <span>Spreading the JAMstack</span>
       <span>
         <a
-          href="https://twitter.com/ScottDevTweets"
+          href="https://twitter.com/spences10"
           target="_blank"
           rel="noopener">
-          @ScottDevTweets
+          @spences10
         </a>
       </span>
     </Footer>
   </Fragment>
 )
-
-export default Layout

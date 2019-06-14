@@ -13,6 +13,6 @@ const Wrapper = styled.main`
   border: solid 0.75rem #1b2341;
 `
 
-const LayoutNoFooter = ({ children }) => <Wrapper>{children}</Wrapper>
-
-export default LayoutNoFooter
+export const LayoutNoFooter = ({ children }) => (
+  <Wrapper>{children}</Wrapper>
+)

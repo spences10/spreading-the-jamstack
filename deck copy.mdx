@@ -1,0 +1,513 @@
+export { default as theme } from './src/index'
+
+import { Head, Appear } from 'mdx-deck'
+import { Split, Invert } from 'mdx-deck/layouts'
+
+import {
+  FullScreenImage,
+  LayoutNoFooter,
+  Layout,
+  BGImage
+} from './src/index'
+
+<Head>
+  <title>JAMstack ❤</title>
+  <link
+    href="https://fonts.googleapis.com/css?family=Arvo|Martel+Sans"
+    rel="stylesheet"
+  />
+  <link
+    href={require('file-loader!./static/favicon.png')}
+    rel="shortcut icon"
+  />
+</Head>
+
+export default Layout
+
+# Spreading the JAMstack
+
+## Hello JAMstack 👋
+
+---
+
+export default LayoutNoFooter
+
+# Scott Spence
+
+---
+
+export default LayoutNoFooter
+
+<img
+  src={require('file-loader!./images/karmaLogo.png')}
+  alt="karmarama logo"
+/>
+
+---
+
+export default Invert
+
+# Warning!
+
+---
+
+export default LayoutNoFooter
+
+# Excessive use
+
+# of gif's
+
+# memes and emoji
+
+---
+
+# Poll
+
+```notes
+Who knows what JAMstack is
+
+Who knows what a stack is
+
+Who cares?
+
+Hopefully by the end you will care a little bit more
+```
+
+---
+
+export default Split
+
+## What's a JAMstack? 🤔
+
+- JavaScript
+- APIs
+- Markup
+
+```notes
+The JAMstack is not about specific technologies.
+
+It's a new way of building websites and apps that delivers:
+
+- better performance,
+- higher security,
+- lower cost of scaling,
+
+- and a better developer experience.
+```
+
+---
+
+export default Split
+
+## JavaScript
+
+<img
+  src={require('file-loader!./images/javascript-logo.svg')}
+  alt="JavaScript logo"
+/>
+
+```notes
+JavaScript is the language of the browser
+
+Any dynamic programming during the request/response cycle is handled
+by JavaScript, running entirely on the client (the browser).
+
+This could be any frontend framework, library, or even vanilla
+JavaScript.
+```
+
+---
+
+export default Split
+
+## APIs
+
+<img
+  src={require('file-loader!./images/database-schema.svg')}
+  alt="database schema"
+/>
+
+```notes
+Whats an API?
+
+An API is a set of functions or procedures.
+
+Features or data of an app or opperating system.
+
+All server-side processes or database actions are abstracted into
+reusable APIs, accessed over HTTPS with JavaScript.
+These can be custom-built or leverage third-party services.
+```
+
+---
+
+export default Split
+
+## Markup
+
+<img
+  src={require('file-loader!./images/css-html.svg')}
+  alt="html and css logos"
+/>
+
+```notes
+What is markup?
+
+It's two of the holy trinity that makes up the frontend.
+
+HTML and CSS
+
+HTML is the structure, like the bones of a site
+
+CSS is like the muscles, skin and makeup
+
+JavaScript is like the brain
+
+Templated markup should be prebuilt at deploy time, usually using a
+site generator for content sites, or a build tool for web apps.
+```
+
+---
+
+export default Layout
+
+## Also known as Static Sites
+
+```notes
+static site generators, SSGs
+```
+
+---
+
+export default Split
+
+## Static
+
+- Early 90's
+
+---
+
+export default FullScreenImage
+
+<BGImage
+  src={require('file-loader!./images/90s-site.gif')}
+  alt="90s site gif"
+/>
+
+---
+
+export default FullScreenImage
+
+<BGImage
+  src={require('file-loader!./images/capt90s.gif')}
+  alt="capt. marvel 90s site gif"
+/>
+
+---
+
+export default Layout
+
+# What is static?
+
+---
+
+export default Layout
+
+<img
+  src={require('file-loader!./images/what-is-static.png')}
+  alt="dictionary image of static definition"
+/>
+
+```notes
+Static (loaded term)
+```
+
+---
+
+export default Layout
+
+# JAMstack
+
+- It's not the experience
+- It's the architecture
+
+---
+
+export default FullScreenImage
+
+<BGImage
+  src={require('file-loader!./images/ytho.jpg')}
+  alt="y tho meme"
+/>
+
+---
+
+export default Layout
+
+# Perf
+
+---
+
+export default Layout
+
+# People want things fast
+
+---
+
+export default Layout
+
+<img
+  height="200px"
+  src={require('file-loader!./images/google-logo.svg')}
+  alt="google logo"
+/>
+
+## Since 2010
+
+```notes
+- Perf has been a factor in it's ranking algorithm
+
+- That's not news, people are using mobile devices a lot more now,
+  there are two indexes, desktop and mobile
+
+```
+
+---
+
+export default Layout
+
+# How users interact with your site
+
+# _could_ impact rankings
+
+---
+
+# Click through rates
+
+---
+
+# Time spent on page
+
+---
+
+# Return rate
+
+```notes
+returning users
+```
+
+---
+
+export default Layout
+
+# Bounce Rate & Conversions
+
+## where it _really_ matters 💷💳💸🤑
+
+---
+
+export default Layout
+
+# How fast is fast enough?
+
+---
+
+export default Layout
+
+# 2 seconds ⏱
+
+---
+
+export default Layout
+
+Static means no work to be done at request time.
+
+---
+
+export default Layout
+
+Much smaller attack surface to secure and protect
+
+---
+
+export default Split
+
+# _Dynamic_
+
+<Appear>
+
+```notes
+- CDN
+- AWS load balancer
+- Web server for server things
+- database things
+```
+
+<div>Browser 👀</div>
+<div>⬇</div>
+<div>CDN 🌐</div>
+
+<div>⬇</div>
+<div>Load balancer ⚖</div>
+
+<div>⬇</div>
+<div>Web server 🤹‍♀️</div>
+
+<div>⬇</div>
+<div>Database server ‍🤹‍♀️</div>
+
+<div>⬇</div>
+<div>Browser 👀</div>
+
+</Appear>
+
+---
+
+export default Split
+
+# _JAMstack_
+
+<Appear>
+
+```notes
+- CDN
+```
+
+<div>Browser 👀</div>
+<div>⬇</div>
+<div>CDN 🌐</div>
+<div>⬇</div>
+<div>Browser 👀</div>
+
+</Appear>
+
+---
+
+export default Layout
+
+# Static Site Generators (SSGs)
+
+## JavaScript
+
+### Gatsby
+
+### React Static
+
+### Next.js
+
+```notes
+Static site generators aren't new
+April 2013 for Jekyll
+```
+
+---
+
+export default FullScreenImage
+
+<BGImage
+  src={require('file-loader!./images/jam-logo.jpg')}
+  alt="gatsby JAMstack logo"
+/>
+
+```notes
+Gatsby is more of a PWA generator
+```
+
+---
+
+export default Split
+
+# Detail the workflow
+
+### Netlify with a pre built template
+
+### Netlify with Gatsby
+
+### Netlify with this presentation
+
+---
+
+export default LayoutNoFooter
+
+- Netlify with a pre built template
+  - search HTML5 template, pick http://www.initializr.com/
+  - download bootstrap version
+  - load it to Netlify
+  - Mind blown
+
+---
+
+export default LayoutNoFooter
+
+# JAMstack sites
+
+<h2>
+  <a
+    href="https://www.smashingmagazine.com/"
+    target="_blank"
+    rel="noopener">
+    smashingmagazine.com/
+  </a>
+</h2>
+
+<h2>
+  <a href="https://www.jfkt4.nyc/" target="_blank" rel="noopener">
+    jfkt4.nyc/
+  </a>
+</h2>
+
+<h2>
+  <a href="https://reactjs.org/" target="_blank" rel="noopener">
+    reactjs.org/
+  </a>
+</h2>
+
+<h2>
+  <a
+    href="https://store.gatsbyjs.org/"
+    target="_blank"
+    rel="noopener">
+    store.gatsbyjs.org/
+  </a>
+</h2>
+
+<h2>
+  <a href="https://nozzle.io/" target="_blank" rel="noopener">
+    nozzle.io/
+  </a>
+</h2>
+
+---
+
+export default LayoutNoFooter
+
+# Slides
+
+## [ss10.me/jam-talk](https://ss10.me/jam-talk)
+
+---
+
+export default Layout
+
+# Resources
+
+#### [staticgen.com/](https://www.staticgen.com/)
+
+#### [404pagefound.com/](http://www.404pagefound.com/)
+
+#### [jamstack.wtf/](https://jamstack.wtf/)
+
+#### [how-mobile-latency-impacts-publisher-revenue/](https://www.thinkwithgoogle.com/intl/en-154/insights-inspiration/research-data/need-mobile-speed-how-mobile-latency-impacts-publisher-revenue/)
+
+## Meetup!
+
+#### [meetup.com/JAMstack-London](https://www.meetup.com/JAMstack-London)
+
+---
+
+export default FullScreenImage
+
+<BGImage
+  src={require('file-loader!./images/t.hanks.gif')}
+  alt="tom hanks waiving"
+/>

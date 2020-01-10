@@ -7,7 +7,8 @@ import {
   FullScreenImage,
   LayoutNoFooter,
   Layout,
-  BGImage
+  BGImage,
+  BigImage
 } from './src/index'
 
 <Head>
@@ -64,10 +65,13 @@ export default LayoutNoFooter
 # Poll 💈
 
 ```notes
-Who knows what JAMstack is
-Who knows what a stack is
-Who cares?
-Hopefully by the end you will care more
+- Who knows what JAMstack is
+
+- Who knows what a stack is
+
+- Who cares?
+
+- Hopefully by the end you will care more
 ```
 
 ---
@@ -75,6 +79,14 @@ Hopefully by the end you will care more
 # History Lesson
 
 of the internet
+
+```notes
+- This is more scene setting than anything else
+
+- I'm not going to talk about Sir Tim
+
+- But
+```
 
 ---
 
@@ -87,13 +99,21 @@ export default Split
 - Markup
 
 ```notes
-The JAMstack is not about specific technologies.
-It's a new way of building websites and apps that
+- The JAMstack is not about specific technologies.
 
-delivers better performance,
-higher security,
-lower cost of scaling,
-and a better developer experience.
+- LAMP, MERN, whatever
+
+- It's more a paradigm of how to deploy
+
+- a way of building websites and apps that helps deliver:
+
+- better performance,
+
+- higher security,
+
+- lower cost of scaling,
+
+- and a better developer experience.
 ```
 
 ---
@@ -108,9 +128,12 @@ export default Split
 />
 
 ```notes
-Any dynamic programming during the request/response cycle is handled
-by JavaScript, running entirely on the client (the browser).
-This could be any frontend framework, library, or even vanilla
+- Any dynamic programming during the request/response cycle is handled
+by JavaScript,
+
+- running entirely on the client (the browser).
+
+- This could be any frontend framework, library, or even vanilla
 JavaScript.
 ```
 
@@ -126,9 +149,12 @@ export default Split
 />
 
 ```notes
-All server-side processes or database actions are abstracted into
-reusable APIs, accessed over HTTPS with JavaScript.
-These can be custom-built or leverage third-party services.
+- All server-side processes or database actions are abstracted into
+reusable APIs,
+
+- accessed over HTTPS with JavaScript.
+
+- These can be custom-built or leverage third-party services.
 ```
 
 ---
@@ -143,8 +169,11 @@ export default Split
 />
 
 ```notes
-Templated markup should be prebuilt at deploy time, usually using a
-site generator for content sites, or a build tool for web apps.
+- Templated markup should be prebuilt at deploy time,
+
+- usually using a site generator for content sites,
+
+- or a build tool for web apps.
 ```
 
 ---
@@ -154,7 +183,9 @@ export default Layout
 ## Also known as Static Sites
 
 ```notes
-static site generators, SSGs
+- static site generators, SSGs
+
+- when you think about static sites what do you think?
 ```
 
 ---
@@ -191,9 +222,9 @@ export default Layout
 
 ---
 
-export default Layout
+export default FullScreenImage
 
-<img
+<BigImage
   src={require('file-loader!./images/what-is-static.png')}
   alt="dictionary image of static definition"
 />
@@ -220,11 +251,21 @@ export default FullScreenImage
   alt="y tho meme"
 />
 
+```notes
+- why is that important though?
+```
+
 ---
 
 export default Layout
 
 # Perf
+
+---
+
+# Speed
+
+## 🏎
 
 ---
 
@@ -248,8 +289,8 @@ export default Layout
 - Perf has been a factor in it's ranking algorithm
 
 - That's not news, people are using mobile devices a lot more now,
-  there are two indexes, desktop and mobile
 
+- there are two indexes, desktop and mobile
 ```
 
 ---
@@ -282,7 +323,13 @@ export default Layout
 
 # Bounce Rate & Conversions
 
-## where it _really_ matters 💷💳💸🤑
+## where it _really_ matters
+
+## 💷 💳 💸 🤑
+
+```notes
+- emoji here to emphasise the importance
+```
 
 ---
 
@@ -295,6 +342,23 @@ export default Layout
 export default Layout
 
 # 2 seconds ⏱
+
+---
+
+export default Layout
+
+<img
+  src={require('file-loader!./images/mobile-page-speed.png')}
+  alt=""
+/>
+
+```notes
+- this slide is from a
+
+- think with Google post, on mobile industry benchmarks (from 2018)
+
+- this is where Gatsby comes in
+```
 
 ---
 
@@ -455,17 +519,21 @@ export default Layout
 
 # Resources
 
-#### [staticgen.com/](https://www.staticgen.com/)
+##### [staticgen.com/](https://www.staticgen.com/)
 
-#### [404pagefound.com/](http://www.404pagefound.com/)
+##### [404pagefound.com/](http://www.404pagefound.com/)
 
-#### [jamstack.wtf/](https://jamstack.wtf/)
+##### [jamstack.wtf/](https://jamstack.wtf/)
 
-#### [how-mobile-latency-impacts-publisher-revenue/](https://www.thinkwithgoogle.com/intl/en-154/insights-inspiration/research-data/need-mobile-speed-how-mobile-latency-impacts-publisher-revenue/)
+##### [how-mobile-latency-impacts-publisher-revenue/](https://www.thinkwithgoogle.com/intl/en-154/insights-inspiration/research-data/need-mobile-speed-how-mobile-latency-impacts-publisher-revenue/)
 
-## Meetup!
+##### [mobile-page-speed-new-industry-benchmarks/](https://www.thinkwithgoogle.com/marketing-resources/data-measurement/mobile-page-speed-new-industry-benchmarks/)
 
-#### [meetup.com/JAMstack-London](https://www.meetup.com/JAMstack-London)
+---
+
+# Meetup!
+
+##### [meetup.com/JAMstack-London](https://www.meetup.com/JAMstack-London)
 
 ---
 

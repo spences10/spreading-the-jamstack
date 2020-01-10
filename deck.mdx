@@ -7,7 +7,8 @@ import {
   FullScreenImage,
   LayoutNoFooter,
   Layout,
-  BGImage
+  BGImage,
+  BigImage
 } from './src/index'
 
 <Head>
@@ -26,7 +27,7 @@ export default Layout
 
 # Spreading the JAMstack
 
-## Hello JAMstack
+## Hello JAMstack 👋
 
 ---
 
@@ -39,7 +40,7 @@ export default LayoutNoFooter
 export default LayoutNoFooter
 
 <img
-  src={require('file-loader!./images/karmaLogo.png')}
+  src={require('file-loader!./images/karma-logo.svg')}
   alt="karmarama logo"
 />
 
@@ -61,13 +62,16 @@ export default LayoutNoFooter
 
 ---
 
-# Poll
+# Poll 💈
 
 ```notes
-Who knows what JAMstack is
-Who knows what a stack is
-Who cares?
-Hopefully by the end you will care more
+- Who knows what JAMstack is
+
+- Who knows what a stack is
+
+- Who cares?
+
+- Hopefully by the end you will care more
 ```
 
 ---
@@ -75,6 +79,14 @@ Hopefully by the end you will care more
 # History Lesson
 
 of the internet
+
+```notes
+- This is more scene setting than anything else
+
+- I'm not going to talk about Sir Tim
+
+- But
+```
 
 ---
 
@@ -87,13 +99,21 @@ export default Split
 - Markup
 
 ```notes
-The JAMstack is not about specific technologies.
-It's a new way of building websites and apps that
+- The JAMstack is not about specific technologies.
 
-delivers better performance,
-higher security,
-lower cost of scaling,
-and a better developer experience.
+- LAMP, MERN, whatever
+
+- It's more a paradigm of how to deploy
+
+- a way of building websites and apps that helps deliver:
+
+- better performance,
+
+- higher security,
+
+- lower cost of scaling,
+
+- and a better developer experience.
 ```
 
 ---
@@ -108,9 +128,12 @@ export default Split
 />
 
 ```notes
-Any dynamic programming during the request/response cycle is handled
-by JavaScript, running entirely on the client (the browser).
-This could be any frontend framework, library, or even vanilla
+- Any dynamic programming during the request/response cycle is handled
+by JavaScript,
+
+- running entirely on the client (the browser).
+
+- This could be any frontend framework, library, or even vanilla
 JavaScript.
 ```
 
@@ -126,9 +149,12 @@ export default Split
 />
 
 ```notes
-All server-side processes or database actions are abstracted into
-reusable APIs, accessed over HTTPS with JavaScript.
-These can be custom-built or leverage third-party services.
+- All server-side processes or database actions are abstracted into
+reusable APIs,
+
+- accessed over HTTPS with JavaScript.
+
+- These can be custom-built or leverage third-party services.
 ```
 
 ---
@@ -143,8 +169,11 @@ export default Split
 />
 
 ```notes
-Templated markup should be prebuilt at deploy time, usually using a
-site generator for content sites, or a build tool for web apps.
+- Templated markup should be prebuilt at deploy time,
+
+- usually using a site generator for content sites,
+
+- or a build tool for web apps.
 ```
 
 ---
@@ -154,7 +183,9 @@ export default Layout
 ## Also known as Static Sites
 
 ```notes
-static site generators, SSGs
+- static site generators, SSGs
+
+- when you think about static sites what do you think?
 ```
 
 ---
@@ -189,17 +220,21 @@ export default Layout
 
 # What is static?
 
+```notes
+- if we look at the dictionary definition
+```
+
 ---
 
-export default Layout
+export default FullScreenImage
 
-<img
+<BigImage
   src={require('file-loader!./images/what-is-static.png')}
   alt="dictionary image of static definition"
 />
 
 ```notes
-Static (loaded term)
+- Static (loaded term)
 ```
 
 ---
@@ -211,6 +246,10 @@ export default Layout
 - It's not the experience
 - It's the architecture
 
+```notes
+- why is that important though?
+```
+
 ---
 
 export default FullScreenImage
@@ -220,11 +259,23 @@ export default FullScreenImage
   alt="y tho meme"
 />
 
+```notes
+- why is that important though?
+
+- slight tangent now
+```
+
 ---
 
 export default Layout
 
 # Perf
+
+---
+
+# Speed
+
+# 🏎💨
 
 ---
 
@@ -242,14 +293,16 @@ export default Layout
   alt="google logo"
 />
 
-## Since 2010
-
 ```notes
-- Perf has been a factor in it's ranking algorithm
+- Perf has been a factor in Google's ranking algorithm since 2010
 
-- That's not news, people are using mobile devices a lot more now,
-  there are two indexes, desktop and mobile
+- That's not news,
 
+- people are using mobile devices a lot more now for everything
+
+- there are two indexes, desktop and mobile
+
+- perf will affect...
 ```
 
 ---
@@ -258,7 +311,7 @@ export default Layout
 
 # How users interact with your site
 
-# _could_ impact rankings
+## will _impact_ rankings
 
 ---
 
@@ -270,19 +323,27 @@ export default Layout
 
 ---
 
-# Return rate
+# Return rates
 
 ```notes
-returning users
+- returning users
 ```
 
 ---
 
 export default Layout
 
-# Bounce Rate & Conversions
+# Bounce Rates & Conversions
 
-## where it _really_ matters 💷💳💸🤑
+## where it _really_ matters
+
+## 💷 💳 💸 🤑
+
+```notes
+- emoji here to emphasise the importance
+
+- so...
+```
 
 ---
 
@@ -296,11 +357,38 @@ export default Layout
 
 # 2 seconds ⏱
 
+```notes
+- apparently
+
+- let's take a look at an infographic...
+```
+
+---
+
+export default Layout
+
+<img
+  src={require('file-loader!./images/mobile-page-speed.png')}
+  alt="mobile page speed bounce probability"
+/>
+
+```notes
+- this slide is from a think with Google post,
+
+- on mobile industry benchmarks (from 2018)
+```
+
+---
+
+# Back to static
+
 ---
 
 export default Layout
 
 Static means no work to be done at request time.
+
+###### for the content that's not dynamic
 
 ---
 
@@ -308,38 +396,47 @@ export default Layout
 
 Much smaller attack surface to secure and protect
 
+```notes
+- lets look at an example of how that works
+```
+
 ---
 
 export default Split
 
 # _Dynamic_
 
-<Appear>
-
 ```notes
-- CDN
-- AWS load balancer
+- simplified example
+
+- Some resources that may be on a CDN
+
+- Or an origin server that is sitting behind a
+
+- AWS load balancer,
+
+- and there'll be logic on there to route the request
+
+- to one of maybe several web servers
+
 - Web server for server things
-- database things
+
+- Then there may be a request for things to render from a database
+
+- then imagine this as a round trip
 ```
 
 <div>Browser 👀</div>
 <div>⬇</div>
 <div>CDN 🌐</div>
-
 <div>⬇</div>
 <div>Load balancer ⚖</div>
-
 <div>⬇</div>
 <div>Web server 🤹‍♀️</div>
-
 <div>⬇</div>
 <div>Database server ‍🤹‍♀️</div>
-
-<div>⬇</div>
+<div>⬇🔃</div>
 <div>Browser 👀</div>
-
-</Appear>
 
 ---
 
@@ -347,10 +444,20 @@ export default Split
 
 # _JAMstack_
 
-<Appear>
-
 ```notes
 - CDN
+
+- this can be enriched further with the A in the JAMstack
+
+- The Gatsby team refer to this as the content mesh
+
+- have your prebuilt site and enrich further with services
+
+- and micro-services
+
+- these can be leveraged directly in the browser
+
+- or at build time
 ```
 
 <div>Browser 👀</div>
@@ -359,25 +466,68 @@ export default Split
 <div>⬇</div>
 <div>Browser 👀</div>
 
-</Appear>
+---
+
+# Empower
+
+## front end developers
+
+```notes
+- much smaller stack
+
+- fewer things for the developer to manage
+```
+
+---
+
+# Powered
+
+## By modern browsers
+
+```notes
+- the capabilities they have
+```
+
+---
+
+# Enhanced
+
+## By a rich ecosystem of services
+
+```notes
+- Now.sh, Netlify
+
+- GraphCMS, Strapi
+
+- Snipcart, stripe
+```
+
+---
+
+# Impact
+
+## Processes and organisation
 
 ---
 
 export default Layout
 
-# Static Site Generators (SSGs)
+# Static Site Generators
 
 ## JavaScript
 
-### Gatsby
-
-### React Static
+### Gatsby.js
 
 ### Next.js
 
 ```notes
-Static site generators aren't new
-April 2013 for Jekyll
+- I've made it this far without mentioning any frameworks
+
+- I'm sure I've impressed my team with that!
+
+- Static site generators aren't new
+
+- April 2013 for Jekyll
 ```
 
 ---
@@ -390,30 +540,32 @@ export default FullScreenImage
 />
 
 ```notes
-Gatsby is more of a PWA generator
-```
+- Gatsby is more of a PWA generator
 
----
-
-export default Split
-
-# Detail the workflow
-
-### Netlify with a pre built template
-
-### Netlify with Gatsby
-
-### Netlify with this presentation
-
----
-
-export default LayoutNoFooter
+- Detail the workflow
 
 - Netlify with a pre built template
+
+- Netlify with Gatsby
+
+- Netlify with this presentation
+
+- Now.sh with a pre built template
+
+- Now.sh with Gatsby
+
+- Now.sh with this presentation
+
+- Netlify with a pre built template
+
   - search HTML5 template, pick http://www.initializr.com/
+
   - download bootstrap version
+
   - load it to Netlify
+
   - Mind blown
+```
 
 ---
 
@@ -429,19 +581,16 @@ export default LayoutNoFooter
     smashingmagazine.com/
   </a>
 </h2>
-
 <h2>
   <a href="https://www.jfkt4.nyc/" target="_blank" rel="noopener">
     jfkt4.nyc/
   </a>
 </h2>
-
 <h2>
   <a href="https://reactjs.org/" target="_blank" rel="noopener">
     reactjs.org/
   </a>
 </h2>
-
 <h2>
   <a
     href="https://store.gatsbyjs.org/"
@@ -450,7 +599,6 @@ export default LayoutNoFooter
     store.gatsbyjs.org/
   </a>
 </h2>
-
 <h2>
   <a href="https://nozzle.io/" target="_blank" rel="noopener">
     nozzle.io/
@@ -471,17 +619,21 @@ export default Layout
 
 # Resources
 
-#### [staticgen.com/](https://www.staticgen.com/)
+##### [staticgen.com/](https://www.staticgen.com/)
 
-#### [404pagefound.com/](http://www.404pagefound.com/)
+##### [404pagefound.com/](http://www.404pagefound.com/)
 
-#### [jamstack.wtf/](https://jamstack.wtf/)
+##### [jamstack.wtf/](https://jamstack.wtf/)
 
-#### [how-mobile-latency-impacts-publisher-revenue/](https://www.thinkwithgoogle.com/intl/en-154/insights-inspiration/research-data/need-mobile-speed-how-mobile-latency-impacts-publisher-revenue/)
+##### [how-mobile-latency-impacts-publisher-revenue/](https://www.thinkwithgoogle.com/intl/en-154/insights-inspiration/research-data/need-mobile-speed-how-mobile-latency-impacts-publisher-revenue/)
 
-## Meetup!
+##### [mobile-page-speed-new-industry-benchmarks/](https://www.thinkwithgoogle.com/marketing-resources/data-measurement/mobile-page-speed-new-industry-benchmarks/)
 
-#### [meetup.com/JAMstack-London](https://www.meetup.com/JAMstack-London)
+---
+
+# Meetup!
+
+##### [meetup.com/JAMstack-London](https://www.meetup.com/JAMstack-London)
 
 ---
 
@@ -491,3 +643,4 @@ export default FullScreenImage
   src={require('file-loader!./images/t.hanks.gif')}
   alt="tom hanks waiving"
 />
+```

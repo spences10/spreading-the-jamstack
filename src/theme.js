@@ -4,7 +4,7 @@ export default {
   ...theme,
 
   // fonts
-  monospace: '"Dank Mono", monospace',
+  monospace: '"Victor Mono", "Dank Mono", monospace',
   font: 'Martel Sans',
   h1: {
     fontFamily: 'Arvo',

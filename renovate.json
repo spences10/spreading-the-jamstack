@@ -1,16 +1,35 @@
 {
-  "extends": [
-    "config:base"
-  ],
-  "reviewers": [
-    "spences10"
-  ],
+  "extends": ["config:base"],
+  "reviewers": ["spences10"],
   "bumpVersion": "patch",
-  "baseBranches": [
-    "patch"
-  ],
+  "baseBranches": ["patch"],
   "automerge": true,
   "major": {
     "automerge": false
-  }
+  },
+  "packageRules": [
+    {
+      "packagePatterns": ["^eslint"],
+      "groupName": "eslint"
+    },
+    {
+      "packagePatterns": ["gatsby"],
+      "groupName": "gatsby"
+    },
+    {
+      "packagePatterns": ["@mdx-js"],
+      "groupName": "@mdx-js"
+    },
+    {
+      "packageNames": ["react", "react-dom"],
+      "groupName": "react"
+    }
+  ],
+  "labels": ["renovate"],
+  "prHourlyLimit": 4,
+  "prConcurrentLimit": 15,
+  "rangeStrategy": "bump",
+  "semanticCommits": true,
+  "schedule": "before 5am on Monday"
 }
+

@@ -1,7 +1,5 @@
 # mdx-deck basic template
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/a725bc6e-e146-40a7-9a27-39aedfd8e73e/deploy-status)](https://app.netlify.com/sites/spreading-the-jam-stack-2019/deploys)
-
 This was generated with [mdx-deck][]'s `npm init deck` command.
 
 ## Presenter mode

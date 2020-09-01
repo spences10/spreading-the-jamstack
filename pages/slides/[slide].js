@@ -2,8 +2,8 @@ import fs from 'fs'
 import dynamic from 'next/dynamic'
 import Head from 'next/head'
 import path from 'path'
-import Header from '../../components/Header'
-import { TotalPagesContext } from '../../context/TotalPagesContext'
+import Header from '../../components/header'
+import { TotalPagesContext } from '../../context/total-pages-context'
 import { siteConfig } from '../../site.config.js'
 
 let fonts = [
@@ -12,7 +12,11 @@ let fonts = [
   `family=Roboto:ital,wght@0,400;0,700;1,400`,
 ]
 
-const SlideshowPage = ({ totalSlidePages, currentSlide, filename }) => {
+const SlideshowPage = ({
+  totalSlidePages,
+  currentSlide,
+  filename,
+}) => {
   const MDXContent = dynamic(() => import(`../../${filename}`))
   return (
     <TotalPagesContext.Provider value={totalSlidePages}>
@@ -58,7 +62,7 @@ export async function getStaticPaths() {
   const postsDirectory = path.join(process.cwd(), 'slides')
   const mdxFiles = fs.readdirSync(postsDirectory)
   // Loop through all post files and create array of slugs (to create links)
-  const paths = mdxFiles.map((filename) => ({
+  const paths = mdxFiles.map(filename => ({
     params: {
       slide: filename.replace('.mdx', ''),
     },

@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
-import { useCurrentSlide } from '../context/CurrentSlideContext'
+import { useEffect, useState } from 'react'
+import { useCurrentSlide } from '../context/current-slide-context'
 
 const keys = {
   slide: 'next-mdx-deck-slide',
@@ -11,7 +11,9 @@ export const useStorage = () => {
   const { currentSlide, setSlide } = useCurrentSlide()
   const router = useRouter()
   const currentPage =
-    router.query && 'slide' in router.query && parseInt(router.query.slide, 10)
+    router.query &&
+    'slide' in router.query &&
+    parseInt(router.query.slide, 10)
   const [focused, setFocused] = useState(false)
 
   /**
@@ -26,7 +28,7 @@ export const useStorage = () => {
    * from event listener
    * @param {*} e
    */
-  const handleStorageChange = (e) => {
+  const handleStorageChange = e => {
     const n = parseInt(e.newValue, 10)
     const syncedSlide = localStorage.getItem(keys.slide)
     // if (focused) return
@@ -49,11 +51,13 @@ export const useStorage = () => {
   }, [])
 
   useEffect(() => {
-    if (!focused) window.addEventListener('storage', handleStorageChange)
+    if (!focused)
+      window.addEventListener('storage', handleStorageChange)
     window.addEventListener('focus', handleFocus)
     window.addEventListener('blur', handleBlur)
     return () => {
-      if (!focused) window.removeEventListener('storage', handleStorageChange)
+      if (!focused)
+        window.removeEventListener('storage', handleStorageChange)
       window.removeEventListener('focus', handleFocus)
       window.removeEventListener('blur', handleBlur)
     }

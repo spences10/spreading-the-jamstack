@@ -1,10 +1,10 @@
-import React from 'react'
 import { AnimatePresence } from 'framer-motion'
-import { CurrentSlideProvider } from '../context/CurrentSlideContext'
-import { ModeProvider } from '../context/ModeContext'
-import MDXProvider from '../components/MDXProvider'
-import { ThemeProvider } from '../components/ThemeProvider'
-import TransitionPage from '../layouts/TransitionPage'
+import React from 'react'
+import MDXProvider from '../components/mdxprovider'
+import { ThemeProvider } from '../components/theme-provider'
+import { CurrentSlideProvider } from '../context/current-slide-context'
+import { ModeProvider } from '../context/mode-context'
+import TransitionPage from '../layouts/transition-page'
 
 export default ({ Component, pageProps }) => (
   <ThemeProvider>

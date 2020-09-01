@@ -8,7 +8,11 @@ const theme = {
 }
 
 export const ThemeProvider = ({ children }) => {
-  return <StyledThemeProvider theme={theme}>{children}</StyledThemeProvider>
+  return (
+    <StyledThemeProvider theme={theme}>
+      {children}
+    </StyledThemeProvider>
+  )
 }
 
 export default ThemeProvider

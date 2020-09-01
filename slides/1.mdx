@@ -1,56 +1,471 @@
 <SlidePage>
-    
+
+
 <Cover>
 
-# NextJS MDX Deck
-    
-Create presentations using Next & React & MDX.
+
+# Spreading the JAMstack
+
+## Hello JAMstack 👋
+
+Scott Spence &bull; NottsJS 2020
 
 </Cover>
 
+
 ---
 
-1. Clone this project.
-1. Write some MDX.
-1. Export as [static app](https://nextjs.org/docs/advanced-features/static-html-export)
-1. ???
-1. Profit as a speaker 💰💰💰
+# Scott Spence
+
+<SpeakerNotes> </SpeakerNotes>
+
+---
+
+work at karamarama
+
+---
+
+# Warning!
+
+---
+
+# Excessive use
+
+# of gif's
+
+# memes and emoji
+
+---
+
+# Poll 💈
 
 <SpeakerNotes>
-    
-Private notes here. 
-
-You can write an extremely long note and it'll still display inside of the presenter mode.
-
-# Even Markdown!
-
-- Just
-- do
-- it
-
+  <p>- Who knows what JAMstack is</p>
+  <p>- Who knows what a stack is</p>
+  <p>- Who cares?</p>
+  <p>- Hopefully by the end you will care more</p>
 </SpeakerNotes>
 
+---
+
+# History Lesson
+
+of the internet
+
+<SpeakerNotes>
+  <p>- This is more scene setting than anything else</p>
+  <p>- I'm not going to talk about Sir Tim</p>
+  <p>- But</p>
+</SpeakerNotes>
 
 ---
 
-> Inscrutable icons litter the face of the devices even though the research
-> community has long demonstrated that people cannot remember the meaning of
-> more than a small number of icons […] Who can remember what each icon
-> means? Not me.
-> <cite>Don Norman</cite>
+## What's a JAMstack? 🤔
+
+- JavaScript
+- APIs
+- Markup
+
+<SpeakerNotes>
+  <p>- The JAMstack is not about specific technologies.</p>
+  <p>- LAMP, MERN, whatever</p>
+  <p>- It's more a paradigm of how to deploy</p>
+  <p>- a way of building websites and apps that helps deliver:</p>
+  <p>- better performance,</p>
+  <p>- higher security,</p>
+  <p>- lower cost of scaling,</p>
+  <p>- and a better developer experience.</p>
+</SpeakerNotes>
 
 ---
 
-# 🤫
+## JavaScript
+
+<SpeakerNotes>
+  <p>
+    - Any dynamic programming during the request/response cycle is
+    handled by JavaScript,
+  </p>
+  <p>- running entirely on the client (the browser). </p>
+  <p>
+    - This could be any frontend framework, library, or even vanilla
+    JavaScript.
+  </p>
+</SpeakerNotes>
 
 ---
 
-## Slides are written in MDX!
+## APIs
 
-And code is highlighted using `react-syntax-highlighter`.
+<SpeakerNotes>
+  <p>
+    - All server-side processes or database actions are abstracted
+    into reusable APIs,
+  </p>
+  <p>- accessed over HTTPS with JavaScript.</p>
+  <p>- These can be custom-built or leverage third-party services.</p>
+</SpeakerNotes>
 
-```js
-const variable = someFunction();
-```
+---
+
+## Markup
+
+<SpeakerNotes>
+  <p>- Templated markup should be prebuilt at deploy time,</p>
+  <p>- usually using a site generator for content sites,</p>
+  <p>- or a build tool for web apps.</p>
+</SpeakerNotes>
+
+---
+
+## Also known as Static Sites
+
+<SpeakerNotes>
+  <p>- static site generators, SSGs</p>
+  <p>- when you think about static sites what do you think?</p>
+</SpeakerNotes>
+
+---
+
+## Static
+
+- Early 90's
+
+---
+
+# What is static?
+
+<SpeakerNotes>
+  <p>- if we look at the dictionary definition</p>
+</SpeakerNotes>
+
+---
+
+<SpeakerNotes>
+  <p>- Static (loaded term)</p>
+  <p>- lacking movement, action or change</p>
+</SpeakerNotes>
+
+---
+
+# JAMstack
+
+- It's not the experience
+- It's the architecture
+
+<SpeakerNotes>
+  <p>- why is that important though?</p>
+</SpeakerNotes>
+
+---
+
+<SpeakerNotes>
+  <p>- why is that important though?</p>
+  <p>- slight tangent now</p>
+</SpeakerNotes>
+
+---
+
+# Perf
+
+---
+
+# Speed
+
+# 🐢
+
+---
+
+# People want things fast
+
+---
+
+<SpeakerNotes>
+  <p>
+    - Perf has been a factor in Google's ranking algorithm since 2010
+  </p>
+  <p>- That's not news,</p>
+  <p>
+    - people are using mobile devices a lot more now for everything
+  </p>
+  <p>- there are two indexes, desktop and mobile</p>
+  <p>- perf will affect...</p>
+</SpeakerNotes>
+
+---
+
+# How users interact with your site
+
+## _will_ impact rankings
+
+---
+
+# Click through rates
+
+---
+
+# Time spent on page
+
+---
+
+# Return rates
+
+<SpeakerNotes>
+  <p>- returning users</p>
+</SpeakerNotes>
+
+---
+
+# Bounce Rates & Conversions
+
+## where it _really_ matters
+
+## 💷 💳 💸 🤑
+
+<SpeakerNotes>
+  <p>- emoji here to emphasise the importance</p>
+  <p>- so...</p>
+</SpeakerNotes>
+
+---
+
+# How fast is fast enough?
+
+---
+
+# 2 seconds ⏱
+
+<SpeakerNotes>
+  <p>- apparently</p>
+  <p>- let's take a look at an infographic...</p>
+</SpeakerNotes>
+
+---
+
+<SpeakerNotes>
+  <p>- this slide is from a think with Google post,</p>
+  <p>- on mobile industry benchmarks (from 2018)</p>
+</SpeakerNotes>
+
+---
+
+# Back to static
+
+---
+
+Static means no work to be done at request time.
+
+###### for the content that's not dynamic
+
+---
+
+Much smaller attack surface to secure and protect
+
+<SpeakerNotes>
+  <p>- lets look at an example of how that works</p>
+</SpeakerNotes>
+
+---
+
+# _Dynamic_
+
+<div>Browser 👀</div>
+<div>⬇</div>
+<div>CDN 🌐</div>
+<div>⬇</div>
+<div>Load balancer ⚖</div>
+<div>⬇</div>
+<div>Web server 🤹‍♀️</div>
+<div>⬇</div>
+<div>Database server ‍🤹‍♀️</div>
+<div>⬇🔃</div>
+<div>Browser 👀</div>
+
+<SpeakerNotes>
+  <p>- simplified example</p>
+  <p>- Some resources that may be on a CDN</p>
+  <p>- Or an origin server that is sitting behind a</p>
+  <p>- AWS load balancer,</p>
+  <p>- and there'll be logic on there to route the request</p>
+  <p>- to one of maybe several web servers</p>
+  <p>- Web server for server things</p>
+  <p>
+    - Then there may be a request for things to render from a database
+  </p>
+  <p>- then imagine this as a round trip</p>
+</SpeakerNotes>
+
+---
+
+# _JAMstack_
+
+<div>Browser 👀</div>
+<div>⬇</div>
+<div>CDN 🌐</div>
+<div>⬇</div>
+<div>Browser 👀</div>
+
+<SpeakerNotes>
+  <p>- CDN</p>
+  <p>- this can be enriched further with the A in the JAMstack</p>
+  <p>- The Gatsby team refer to this as the content mesh</p>
+  <p>- have your prebuilt site and enrich further with services</p>
+  <p>- and micro-services</p>
+  <p>- these can be leveraged directly in the browser</p>
+  <p>- or at build time</p>
+</SpeakerNotes>
+
+---
+
+# Empower
+
+## front end developers
+
+<SpeakerNotes>
+  <p>- much smaller stack</p>
+  <p>- fewer things for the developer to manage</p>
+</SpeakerNotes>
+
+---
+
+# Powered
+
+## By modern browsers
+
+<SpeakerNotes>
+  <p>- the capabilities they have</p>
+</SpeakerNotes>
+
+---
+
+# Enhanced
+
+## By a rich ecosystem of services
+
+<SpeakerNotes>
+  <p>- Now.sh, Netlify</p>
+  <p>- GraphCMS, Strapi</p>
+  <p>- Snipcart, stripe</p>
+</SpeakerNotes>
+
+---
+
+# Impact
+
+## Processes and organisation
+
+---
+
+# Static Site Generators
+
+## JavaScript
+
+### Gatsby.js
+
+### Next.js
+
+<SpeakerNotes>
+  <p>- I've made it this far without mentioning any frameworks</p>
+  <p>- I'm sure I've impressed my team with that!</p>
+  <p>- Static site generators aren't new</p>
+  <p>- April 2013 for Jekyll</p>
+</SpeakerNotes>
+
+---
+
+<SpeakerNotes>
+  <p>- Gatsby is more of a PWA generator</p>
+  <p>- Detail the workflow</p>
+  <p>- Netlify with a pre built template</p>
+  <p>- Netlify with Gatsby</p>
+  <p>- Netlify with this presentation</p>
+  <p>- Now.sh with a pre built template</p>
+  <p>- Now.sh with Gatsby</p>
+  <p>- Now.sh with this presentation</p>
+  <p>- Netlify with a pre built template</p>
+  <p> - search HTML5 template, pick http://www.initializr.com/</p>
+  <p> - download bootstrap version</p>
+  <p> - load it to Netlify</p>
+  <p> - Mind blown</p>
+</SpeakerNotes>
+
+---
+
+# JAMstack sites
+
+<h2>
+  <a
+    href="https://www.smashingmagazine.com/"
+    target="_blank"
+    rel="noopener"
+  >
+    smashingmagazine.com/
+  </a>
+</h2>
+<h2>
+  <a href="https://www.jfkt4.nyc/" target="_blank" rel="noopener">
+    jfkt4.nyc/
+  </a>
+</h2>
+<h2>
+  <a href="https://reactjs.org/" target="_blank" rel="noopener">
+    reactjs.org/
+  </a>
+</h2>
+<h2>
+  <a
+    href="https://store.gatsbyjs.org/"
+    target="_blank"
+    rel="noopener"
+  >
+    store.gatsbyjs.org/
+  </a>
+</h2>
+<h2>
+  <a href="https://nozzle.io/" target="_blank" rel="noopener">
+    nozzle.io/
+  </a>
+</h2>
+
+---
+
+# Slides
+
+## [ss10.me/jam-talk](https://ss10.me/jam-talk)
+
+---
+
+# Resources
+
+##### [staticgen.com/](https://www.staticgen.com/)
+
+##### [404pagefound.com/](http://www.404pagefound.com/)
+
+##### [jamstack.wtf/](https://jamstack.wtf/)
+
+##### [how-mobile-latency-impacts-publisher-revenue/](https://www.thinkwithgoogle.com/intl/en-154/insights-inspiration/research-data/need-mobile-speed-how-mobile-latency-impacts-publisher-revenue/)
+
+##### [mobile-page-speed-new-industry-benchmarks/](https://www.thinkwithgoogle.com/marketing-resources/data-measurement/mobile-page-speed-new-industry-benchmarks/)
+
+---
+
+# Meetup!
+
+##### [meetup.com/JAMstack-London](https://www.meetup.com/JAMstack-London)
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
 
 </SlidePage>
+

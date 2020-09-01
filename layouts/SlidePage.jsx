@@ -1,25 +1,25 @@
+import { useRouter } from 'next/router'
 import React from 'react'
 import { Swipeable } from 'react-swipeable'
-import { useRouter } from 'next/router'
 import { createGlobalStyle } from 'styled-components'
-import Slide from '../components/Slide'
 import PresentationMode from '../components/PresentationMode'
-import useEventListener from '../hooks/useEventListener'
-import { useTotalPages } from '../context/TotalPagesContext'
-import { useMode } from '../context/ModeContext'
-import { useCurrentSlide } from '../context/CurrentSlideContext'
-import { Storage } from '../hooks/useStorage'
+import Slide from '../components/Slide'
 import { MODES } from '../constants/modes'
+import { useCurrentSlide } from '../context/CurrentSlideContext'
+import { useMode } from '../context/ModeContext'
+import { useTotalPages } from '../context/TotalPagesContext'
+import useEventListener from '../hooks/useEventListener'
+import { Storage } from '../hooks/useStorage'
 
 const GlobalStyle = createGlobalStyle`
   :root {
-    --bg: #050505;
+    --bg: #1a202c;
     --meta: #888;
     --accent: rgb(0, 92, 221);
-    --text: #FAFAFA;
+    --text: #f7fafc;
     --base: 1.5rem;
     --code: 1rem;
-    --heading-font-family: "Poppins";
+    --heading-font-family: "Arvo";
     --heading-font-weight: 800;
   }
 
@@ -217,7 +217,7 @@ export default function SlidePage({ children }) {
   const { currentSlide, setSlide } = useCurrentSlide()
   const router = useRouter()
   const totalPages = useTotalPages()
-  const {mode, setMode} = useMode()
+  const { mode, setMode } = useMode()
 
   const NEXT = [13, 32, 39]
   const PREV = 37
@@ -230,10 +230,18 @@ export default function SlidePage({ children }) {
       if (keyCode === PRESENTER) {
         if (mode === MODES.SPEAKER) {
           setMode(MODES.SLIDESHOW)
-          router.push(router.pathname, `/slides/${router.query.slide}?mode=${MODES.SLIDESHOW}#${currentSlide}`, {shallow:true})
+          router.push(
+            router.pathname,
+            `/slides/${router.query.slide}?mode=${MODES.SLIDESHOW}#${currentSlide}`,
+            { shallow: true }
+          )
         } else {
           setMode(MODES.SPEAKER)
-          router.push(router.pathname, `/slides/${router.query.slide}?mode=${MODES.SPEAKER}#${currentSlide}`, {shallow:true})
+          router.push(
+            router.pathname,
+            `/slides/${router.query.slide}?mode=${MODES.SPEAKER}#${currentSlide}`,
+            { shallow: true }
+          )
         }
         return false
       }
@@ -243,7 +251,11 @@ export default function SlidePage({ children }) {
     if (keyCode === PREV && currentSlide === 0) {
       if (router.query && router.query.slide) {
         if (router.query.slide > 1) {
-          router.push(`/slides/${parseInt(router.query.slide, 10) - 1}?mode=${mode}#999`)
+          router.push(
+            `/slides/${
+              parseInt(router.query.slide, 10) - 1
+            }?mode=${mode}#999`
+          )
         }
       }
       return false
@@ -254,7 +266,11 @@ export default function SlidePage({ children }) {
       if (router.query && router.query.slide) {
         // Check for max page count
         if (router.query.slide < totalPages) {
-          router.push(`/slides/${parseInt(router.query.slide, 10) + 1}?mode=${mode}`)
+          router.push(
+            `/slides/${
+              parseInt(router.query.slide, 10) + 1
+            }?mode=${mode}`
+          )
         }
       }
       return false
@@ -262,13 +278,23 @@ export default function SlidePage({ children }) {
 
     // Handle slide changes
     if (NEXT.indexOf(keyCode) !== -1) {
-      setSlide((prevState) => {
-        router.push(`${router.pathname}`, `/slides/${router.query.slide}?mode=${mode}#${prevState + 1}`)
+      setSlide(prevState => {
+        router.push(
+          `${router.pathname}`,
+          `/slides/${router.query.slide}?mode=${mode}#${
+            prevState + 1
+          }`
+        )
         return prevState + 1
       })
     } else if (keyCode === PREV) {
-      setSlide((prevState) => {
-        router.push(`${router.pathname}`, `/slides/${router.query.slide}?mode=${mode}#${prevState - 1}`)
+      setSlide(prevState => {
+        router.push(
+          `${router.pathname}`,
+          `/slides/${router.query.slide}?mode=${mode}#${
+            prevState - 1
+          }`
+        )
         return prevState - 1
       })
     }
@@ -288,9 +314,10 @@ export default function SlidePage({ children }) {
     let generatorCount = 0
     let generatedNotes = []
     // Filter down children by only Slides
-    React.Children.map(children, (child) => {
+    React.Children.map(children, child => {
       // Check for <hr> element to separate slides
-      const childType = child && child.props && (child.props.mdxType || [])
+      const childType =
+        child && child.props && (child.props.mdxType || [])
       if (childType && childType.includes('hr')) {
         generatorCount += 1
         return
@@ -311,9 +338,10 @@ export default function SlidePage({ children }) {
     let generatorCount = 0
 
     // Filter down children by only Slides
-    React.Children.map(children, (child) => {
+    React.Children.map(children, child => {
       // Check for <hr> element to separate slides
-      const childType = child && child.props && (child.props.mdxType || [])
+      const childType =
+        child && child.props && (child.props.mdxType || [])
       if (childType && childType.includes('hr')) {
         generatorCount += 1
         return
@@ -334,7 +362,11 @@ export default function SlidePage({ children }) {
 
     // Return current slide
     if (currentSlide === 999) {
-      router.push(router.pathname, `/slides/${router.query.slide}?mode=${mode}#${slideCount}`, { shallow: true })
+      router.push(
+        router.pathname,
+        `/slides/${router.query.slide}?mode=${mode}#${slideCount}`,
+        { shallow: true }
+      )
       setSlide(slideCount)
     }
     return <Slide>{generatedSlides[currentSlide]}</Slide>

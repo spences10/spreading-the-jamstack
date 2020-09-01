@@ -1,10 +1,16 @@
 import fs from 'fs'
-import path from 'path'
-import Head from 'next/head'
 import dynamic from 'next/dynamic'
+import Head from 'next/head'
+import path from 'path'
 import Header from '../../components/Header'
 import { TotalPagesContext } from '../../context/TotalPagesContext'
 import { siteConfig } from '../../site.config.js'
+
+let fonts = [
+  `family=Arvo:ital,wght@0,400;0,700;1,400;1,700`,
+  `family=Poppins:wght@800`,
+  `family=Roboto:ital,wght@0,400;0,700;1,400`,
+]
 
 const SlideshowPage = ({ totalSlidePages, currentSlide, filename }) => {
   const MDXContent = dynamic(() => import(`../../${filename}`))
@@ -16,7 +22,9 @@ const SlideshowPage = ({ totalSlidePages, currentSlide, filename }) => {
         </title>
         <link rel="icon" href="/favicon.ico" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+          href={`https://fonts.googleapis.com/css2?${fonts.join(
+            `&`
+          )}&display=swap`}
           rel="stylesheet"
         />
       </Head>

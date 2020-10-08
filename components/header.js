@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import React from 'react'
 
 export default function Header({ name, title, date, url }) {
@@ -8,10 +7,7 @@ export default function Header({ name, title, date, url }) {
         <a href={url}>
           <span>{name}</span>
         </a>{' '}
-        —{' '}
-        <Link href="/1">
-          <a>{title}</a>
-        </Link>
+        — <a>{title}</a>
       </div>
       <time>{date}</time>
     </header>

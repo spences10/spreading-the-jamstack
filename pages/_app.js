@@ -1,6 +1,6 @@
 import { AnimatePresence } from 'framer-motion'
 import React from 'react'
-import MDXProvider from '../components/mdxprovider'
+import MDXProvider from '../components/mdx-provider'
 import { ThemeProvider } from '../components/theme-provider'
 import { CurrentSlideProvider } from '../context/current-slide-context'
 import { ModeProvider } from '../context/mode-context'

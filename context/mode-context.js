@@ -1,25 +1,23 @@
-import { createContext, useContext, useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
+import { createContext, useContext, useEffect, useState } from 'react'
 import { MODES } from '../constants/modes'
-
 
 export const ModeContext = createContext({})
 
 export function ModeProvider({ children }) {
-    const [mode, setMode] = useState(MODES.SLIDESHOW)
-    const router = useRouter()
-    const newMode = router.query.mode
+  const [mode, setMode] = useState(MODES.SLIDESHOW)
+  const router = useRouter()
+  const newMode = router.query.mode
 
-    useEffect(() => {
-        if (newMode) setMode(newMode)
-    }, [newMode])
+  useEffect(() => {
+    if (newMode) setMode(newMode)
+  }, [newMode])
 
-
-    return (
-      <ModeContext.Provider value={{ mode, setMode }}>
-        {children}
-      </ModeContext.Provider>
-    )
+  return (
+    <ModeContext.Provider value={{ mode, setMode }}>
+      {children}
+    </ModeContext.Provider>
+  )
 }
 
 export const useMode = () => useContext(ModeContext)

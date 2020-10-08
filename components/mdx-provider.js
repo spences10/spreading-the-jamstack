@@ -1,5 +1,4 @@
 import { MDXProvider } from '@mdx-js/react'
-import { MDXEmbedProvider } from 'mdx-embed'
 import React from 'react'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import okaidia from 'react-syntax-highlighter/dist/cjs/styles/prism/okaidia'
@@ -28,13 +27,11 @@ const mdComponents = {
   Cover,
   SlidePage,
   SpeakerNotes,
-  Split,
   JamstackLogo,
   HtmlCssLogo,
+  Split,
 }
 
 export default ({ children }) => (
-  <MDXProvider components={mdComponents}>
-    <MDXEmbedProvider>{children}</MDXEmbedProvider>
-  </MDXProvider>
+  <MDXProvider components={mdComponents}>{children}</MDXProvider>
 )

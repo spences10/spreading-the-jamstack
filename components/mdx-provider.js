@@ -2,7 +2,9 @@ import { MDXProvider } from '@mdx-js/react'
 import React from 'react'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import okaidia from 'react-syntax-highlighter/dist/cjs/styles/prism/okaidia'
+import AboutPage from '../layouts/about-page'
 import SlidePage from '../layouts/slide-page'
+import TransitionPage from '../layouts/transition-page'
 import Cover from './cover'
 import { HtmlCssLogo } from './html-css-logo'
 import { JamstackLogo } from './jamstack-logo'
@@ -25,7 +27,9 @@ const mdComponents = {
     )
   },
   Cover,
+  AboutPage,
   SlidePage,
+  TransitionPage,
   SpeakerNotes,
   JamstackLogo,
   HtmlCssLogo,

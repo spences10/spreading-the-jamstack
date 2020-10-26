@@ -7,6 +7,7 @@ import SlidePage from '../layouts/slide-page'
 import TransitionPage from '../layouts/transition-page'
 import Cover from './cover'
 import { HtmlCssLogo } from './html-css-logo'
+import { HtmlLogo } from './html-logo'
 import { JamstackLogo } from './jamstack-logo'
 import SpeakerNotes from './speaker-notes'
 import { Split } from './split'
@@ -33,6 +34,7 @@ const mdComponents = {
   SpeakerNotes,
   JamstackLogo,
   HtmlCssLogo,
+  HtmlLogo,
   Split,
 }
 

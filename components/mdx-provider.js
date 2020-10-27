@@ -38,6 +38,8 @@ const mdComponents = {
   Split,
 }
 
-export default ({ children }) => (
-  <MDXProvider components={mdComponents}>{children}</MDXProvider>
-)
+export default function SlidesMDXProvider({ children }) {
+  return (
+    <MDXProvider components={mdComponents}>{children}</MDXProvider>
+  )
+}

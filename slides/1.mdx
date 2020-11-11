@@ -165,10 +165,11 @@ Scott Spence • Scale By The Bay
 
 ---
 
-# What is a Jamstack? 💡
+# What is a jamstack? 💡
 
 <SpeakerNotes>
   <p>- We'll come onto this</p>
+  <p>- First though...</p>
 </SpeakerNotes>
 
 ---
@@ -211,8 +212,8 @@ Scott Spence • Scale By The Bay
   </ul>
   <p>- and MOST IMPORTANTLY a better developer experience.</p>
   <p>
-    - I say MOST IMPORTANTLY as a developer, but ultimately it will
-    lead to a better user experience.
+    - I say MOST IMPORTANTLY as a developer, ultimately this leads to
+    a better user experience.
   </p>
 </SpeakerNotes>
 
@@ -235,9 +236,10 @@ Scott Spence • Scale By The Bay
 </Split>
 
 <SpeakerNotes>
+  <p>- The JavaScript will take care of...</p>
   <p>
     - Any dynamic programming during the request/response cycle is
-    handled by JavaScript,
+    handled by JavaScript
   </p>
   <p>- running entirely on the client (the browser). </p>
   <p>
@@ -286,17 +288,49 @@ Scott Spence • Scale By The Bay
 </Split>
 
 <SpeakerNotes>
-  <p>- Templated markup should be prebuilt at deploy time,</p>
-  <p>- usually using a site generator for content sites,</p>
-  <p>- or a build tool for web apps.</p>
+  <p>- The M is for Markup and not Markdown</p>
 </SpeakerNotes>
 
 ---
 
-# AKA Static Sites
+<img
+  style={{
+    width: '30%',
+    textAlign: 'right',
+    display: 'inline',
+  }}
+  src="/markdown.svg"
+/>
+
+<SpeakerNotes>
+  <p>- Although you can use markdown as it renders to HTML</p>
+</SpeakerNotes>
+
+---
+
+<Split>
+
+# Markup
+
+<HtmlLogo textColor="#f7fafc" />
+
+</Split>
+
+<SpeakerNotes>
+  <p>- So, templated markup should be prebuilt, at build time,</p>
+  <p>- these are the fundimental's of web architecture</p>
+  <p>
+    - this sort of approach can also be defined as static sites...
+  </p>
+</SpeakerNotes>
+
+---
+
+# Static Sites
 
 <SpeakerNotes>
   <p>- So, when you think about static sites what do you think?</p>
+  <p>- What comes to minds when you think of a static site</p>
 </SpeakerNotes>
 
 ---
@@ -327,28 +361,15 @@ Scott Spence • Scale By The Bay
     width: '70%',
     display: 'inline',
   }}
-  src="/90s-site.gif"
-/>
-
-<SpeakerNotes>
-  <p>- Remember when a site like this was where it was at?</p>
-</SpeakerNotes>
-
----
-
-<img
-  style={{
-    width: '70%',
-    display: 'inline',
-  }}
   src="/capt90s.gif"
 />
 
 https://www.marvel.com/captainmarvel/
 
 <SpeakerNotes>
+  <p>- Remember when a site like this was where it was at?</p>
   <p>
-    - There's been a nice re-imagination of a a 90s site in the recent
+    - This is a nice re-imagination of a a 90s site in the recent
     captain marvel film.
   </p>
 </SpeakerNotes>
@@ -521,12 +542,26 @@ https://www.marvel.com/captainmarvel/
   <p>
     - Perf has been a factor in Google's ranking algorithm since 2010
   </p>
-  <p>- That's not news,</p>
+</SpeakerNotes>
+
+---
+
+<img
+  style={{
+    width: '50%',
+    display: 'inline',
+  }}
+  src="/google-logo.svg"
+/>
+
+# 2010
+
+<SpeakerNotes>
   <p>
     - people are using mobile devices a lot more now for everything
   </p>
   <p>- there are two indexes, desktop and mobile</p>
-  <p>- perf will affect...</p>
+  <p>- performance will affect...</p>
 </SpeakerNotes>
 
 ---
@@ -657,6 +692,10 @@ for every additional second to load the site
 
 # 15% increase
 
+<SpeakerNotes>
+  <p>- ok, back to static...</p>
+</SpeakerNotes>
+
 ---
 
 # Back to static
@@ -670,7 +709,7 @@ No work at request time.
 ##### for the content that's not dynamic
 
 <SpeakerNotes>
-  <p>- Static means</p>
+  <p>- So, with static, this means</p>
   <p>- No work to be done at request time</p>
 </SpeakerNotes>
 
@@ -681,7 +720,7 @@ No work at request time.
 Much smaller attack surface to secure and protect
 
 <SpeakerNotes>
-  <p>- lets look at an example of how that works</p>
+  <p>- a traditional dynamic web project works something like this</p>
 </SpeakerNotes>
 
 ---
@@ -714,15 +753,15 @@ Much smaller attack surface to secure and protect
 </Split>
   
 <SpeakerNotes>
-  <p>- simplified example</p>
+  <p>- This is a simplified example</p>
   <p>- Some resources that may be on a CDN</p>
   <p>- Or an origin server that is sitting behind a</p>
-  <p>- AWS load balancer,</p>
+  <p>- AWS load balancer, let's say</p>
   <p>- and there'll be logic on there to route the request</p>
   <p>- to one of maybe several web servers</p>
   <p>- Web server for server things</p>
   <p>
-    - Then there may be a request for things to render from a database
+    - Then there may be a request to render a view from a database
   </p>
   <p>- then imagine this as a round trip</p>
 </SpeakerNotes>
@@ -754,9 +793,15 @@ Much smaller attack surface to secure and protect
   <p>- CDN</p>
   <p>- this can be enriched further with the A in the Jamstack</p>
   <p>- The Gatsby team refer to this as the content mesh</p>
-  <p>- have your prebuilt site and enrich further with services</p>
-  <p>- and micro-services</p>
-  <p>- these can be leveraged directly in the browser</p>
+  <p>
+    - Here you can have your prebuilt site and enrich further with
+    services
+  </p>
+  <p>- add micro-services</p>
+  <p>
+    - these can be leveraged directly in the browser with the A in
+    jamstack
+  </p>
   <p>- or at build time</p>
 </SpeakerNotes>
 
@@ -792,6 +837,69 @@ Much smaller attack surface to secure and protect
   <p>- GraphCMS, Strapi</p>
   <p>- Snipcart, Stripe</p>
 </SpeakerNotes>
+
+---
+
+<Split>
+  <img
+    style={{
+      width: '30%',
+      display: 'inline',
+      margin: '2rem',
+    }}
+    src="/vercel.svg"
+  />
+  <img
+    style={{
+      width: '30%',
+      display: 'inline',
+      margin: '2rem',
+    }}
+    src="/netlify.svg"
+  />
+</Split>
+
+---
+
+<Split>
+  <img
+    style={{
+      width: '10%',
+      display: 'inline',
+      margin: '2rem',
+    }}
+    src="/graphcms.svg"
+  />
+  <img
+    style={{
+      width: '9%',
+      display: 'inline',
+      margin: '2rem',
+    }}
+    src="/strapi.svg"
+  />
+</Split>
+
+---
+
+<Split>
+  <img
+    style={{
+      width: '10%',
+      display: 'inline',
+      margin: '2rem',
+    }}
+    src="/snipcart.svg"
+  />
+  <img
+    style={{
+      width: '9%',
+      display: 'inline',
+      margin: '2rem',
+    }}
+    src="/stripe.svg"
+  />
+</Split>
 
 ---
 

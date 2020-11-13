@@ -134,7 +134,6 @@ Scott Spence • Scale By The Bay
     Jamstack
   </p>
   <p>- Coined back in 2016 by Netlify CEO Matt Billman</p>
-  <p>- Coined back in 2016 by Netlify CEO Matt Billman</p>
   <p>- More on the reasoning for the name in a bit</p>
 </SpeakerNotes>
 
@@ -206,9 +205,9 @@ Scott Spence • Scale By The Bay
   <p>- It's more a paradigm of how to deploy</p>
   <p>- a way of building websites and apps that helps deliver:</p>
   <ul>
-    <p> - better performance,</p>
-    <p> - more secured projects,</p>
-    <p> - lower cost of scaling,</p>
+    <p>- better performance,</p>
+    <p>- more secured projects,</p>
+    <p>- lower cost of scaling,</p>
   </ul>
   <p>- and MOST IMPORTANTLY a better developer experience.</p>
   <p>
@@ -702,6 +701,10 @@ for every additional second to load the site
 
 ---
 
+# Benefits of the jamstack?
+
+---
+
 # Perf
 
 No work at request time.
@@ -709,8 +712,9 @@ No work at request time.
 ##### for the content that's not dynamic
 
 <SpeakerNotes>
-  <p>- So, with static, this means</p>
+  <p>- So, with static, we get performance out of the box</p>
   <p>- No work to be done at request time</p>
+  <p>- As it's all waiting on a CDN or fileserver</p>
 </SpeakerNotes>
 
 ---
@@ -720,7 +724,10 @@ No work at request time.
 Much smaller attack surface to secure and protect
 
 <SpeakerNotes>
-  <p>- a traditional dynamic web project works something like this</p>
+  <p>- Much smaller stack to manage, secure and protect</p>
+  <p>
+    - a traditional dynamic web project works something like this...
+  </p>
 </SpeakerNotes>
 
 ---
@@ -754,15 +761,14 @@ Much smaller attack surface to secure and protect
   
 <SpeakerNotes>
   <p>- This is a simplified example</p>
+  <p>- From the browser to CDN</p>
   <p>- Some resources that may be on a CDN</p>
-  <p>- Or an origin server that is sitting behind a</p>
-  <p>- AWS load balancer, let's say</p>
+  <p>- To an origin server that may be sitting behind a</p>
+  <p>- AWS load balancer</p>
   <p>- and there'll be logic on there to route the request</p>
   <p>- to one of maybe several web servers</p>
   <p>- Web server for server things</p>
-  <p>
-    - Then there may be a request to render a view from a database
-  </p>
+  <p>- Building a page view from information stored on a database</p>
   <p>- then imagine this as a round trip</p>
 </SpeakerNotes>
 
@@ -791,13 +797,16 @@ Much smaller attack surface to secure and protect
 
 <SpeakerNotes>
   <p>- CDN</p>
+  <p>
+    - Any dynamic content like user generated content can be retrieved
+    at run time if needed
+  </p>
   <p>- this can be enriched further with the A in the Jamstack</p>
   <p>- The Gatsby team refer to this as the content mesh</p>
   <p>
     - Here you can have your prebuilt site and enrich further with
     services
   </p>
-  <p>- add micro-services</p>
   <p>
     - these can be leveraged directly in the browser with the A in
     jamstack
@@ -824,6 +833,10 @@ Much smaller attack surface to secure and protect
 
 <SpeakerNotes>
   <p>- the capabilities they have</p>
+  <p>- meta framework like Toast ES Modules first === no webpack</p>
+  <p>- static/dynamic import syntax</p>
+  <p>- uses Rust compiles to JavaScript</p>
+  <p>- Snowpack</p>
 </SpeakerNotes>
 
 ---
@@ -860,6 +873,12 @@ Much smaller attack surface to secure and protect
   />
 </Split>
 
+<SpeakerNotes>
+  <p>- Vercel, Netlify</p>
+  <p>- hosting and service providers</p>
+  <p>- create your own APIs for use on both Vercel and Netlify</p>
+</SpeakerNotes>
+
 ---
 
 <Split>
@@ -881,6 +900,11 @@ Much smaller attack surface to secure and protect
     src="/strapi.svg"
   />
 </Split>
+
+<SpeakerNotes>
+  <p>- GraphCMS, Strapi</p>
+  <p>- CMS providers</p>
+</SpeakerNotes>
 
 ---
 
@@ -904,11 +928,23 @@ Much smaller attack surface to secure and protect
   />
 </Split>
 
+<SpeakerNotes>
+  <p>- Snipcart, Stripe</p>
+  <p>- payment providers</p>
+</SpeakerNotes>
+
 ---
 
 # Impact
 
 ## Processes and organisation
+
+<SpeakerNotes>
+  <p>
+    - Simplified stack means less time spent provisioning resources
+  </p>
+  <p>- smaller stack for devs to manage</p>
+</SpeakerNotes>
 
 ---
 
@@ -921,8 +957,18 @@ Much smaller attack surface to secure and protect
 ### Next.js
 
 <SpeakerNotes>
-  <p>- I've made it this far without mentioning any frameworks</p>
-  <p>- I'm sure I've impressed my team with that!</p>
+  <p>- Next.js is the best of both worlds</p>
+  <p>
+    - getStaticProps (Static Generation): Fetch data at build time.
+  </p>
+  <p>
+    - getStaticPaths (Static Generation): Specify dynamic routes to
+    pre-render based on data.
+  </p>
+  <p>
+    - getServerSideProps (Server-side Rendering): Fetch data on each
+    request.
+  </p>
   <p>- Static site generators aren't new</p>
   <p>- April 2013 for Jekyll</p>
 </SpeakerNotes>
@@ -963,17 +1009,17 @@ Much smaller attack surface to secure and protect
     target="_blank"
     rel="noopener"
   >
-    smashingmagazine.com/
+    smashingmagazine.com
   </a>
 </h2>
 <h2>
   <a href="https://www.jfkt4.nyc/" target="_blank" rel="noopener">
-    jfkt4.nyc/
+    jfkt4.nyc
   </a>
 </h2>
 <h2>
   <a href="https://reactjs.org/" target="_blank" rel="noopener">
-    reactjs.org/
+    reactjs.org
   </a>
 </h2>
 <h2>
@@ -982,12 +1028,12 @@ Much smaller attack surface to secure and protect
     target="_blank"
     rel="noopener"
   >
-    store.gatsbyjs.org/
+    store.gatsbyjs.org
   </a>
 </h2>
 <h2>
   <a href="https://nozzle.io/" target="_blank" rel="noopener">
-    nozzle.io/
+    nozzle.io
   </a>
 </h2>
 
